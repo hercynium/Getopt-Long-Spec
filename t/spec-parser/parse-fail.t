@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-use Test::More; 
+use Test::More;
 
 plan( tests => 1);
 
