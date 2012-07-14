@@ -33,3 +33,4 @@ blib/
 *.DS_Store
 *.tdy
 *.bak
+.build/

@@ -140,10 +140,10 @@ Here's an example of use:
     my $builder   = Getopt::Long::SpecBuilder->new();
     my $spec      = $builder->build( %opt_attrs );
     print $spec;  # output: 'foo|f=s@{1,5}'
-    
+
     # OR...
-    
-    my $spec = 
+
+    my $spec =
         Getopt::Long::SpecBuilder->build( %opt_attrs );
 
 =head1 METHODS

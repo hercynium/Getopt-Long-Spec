@@ -231,7 +231,7 @@ __END__
 
 =head1 SYNOPSIS
 
-This module parses an option specification as would normally be used with 
+This module parses an option specification as would normally be used with
 Getopt::Long, and produces a hash showing the meaning/parameters the spec
 describes... if that makes any sense at all...
 
@@ -241,13 +241,13 @@ Perhaps a little code snippet.
 
     my $parser = Getopt::Long::SpecParser->new();
     my %spec_info = $parser->parse( 'foo|f=s@{1,5}' );
-    
+
     # OR...
-    
-    my %spec_info = 
+
+    my %spec_info =
         Getopt::Long::SpecParser->parse( 'foo|f=s@{1,5}' );
 
-%spec_info should be a hash containing info about the parsed Getopt::Long 
+%spec_info should be a hash containing info about the parsed Getopt::Long
 option specification
 
 =head1 METHODS
@@ -258,7 +258,7 @@ construct a new parser.
 
     my $parser = Getopt::Long::SpecParser->new();
     # OR...
-    my $parser = Getopt::Long::SpecParser->new( 
+    my $parser = Getopt::Long::SpecParser->new(
         debug => 1,
     );
 
@@ -271,7 +271,7 @@ parse an option specification
     # OR...
     my %spec_info = Getopt::Long::SpecParser->parse( 'foo' );
 
-return the info parsed from the spec as a hash, or hashref, 
+return the info parsed from the spec as a hash, or hashref,
 depending on context.
 
 In scalar context, returns a hashref, in list context, returns a hash.
