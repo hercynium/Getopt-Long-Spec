@@ -15,7 +15,7 @@ sub new { return bless {}, shift }
 =method parse
 
 Given a valid L<Getopt::Long>
-L<option specification|Getopt::Long/Summary_of_Option_Specifications>,
+L<option specification|Getopt::Long/Summary-of-Option-Specifications>,
 this method returns a hash describing the spec (see synopsis, above).
 
 This can be called as an object or class method. It will throw an exception
